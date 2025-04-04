@@ -1,9 +1,29 @@
 {
-  "user": [
+  "users": [
     {
-      "userNum": 1,
-      "userName": "",
-      "userId": ""
+      "IdNum": 100,
+      "userName": "HONG",
+      "userId": "hong1234",
+      "userPw": "",
+      "genres": [
+        { "id": 14, "name": "판타지" },
+        { "id": 28, "name": "액션" },
+        { "id": 9648, "name": "미스터리" }
+      ],
+      "movies": [
+        {
+          "MId": "8966",
+          "Mname": "트와일라잇"
+        },
+        {
+          "MId": "26662",
+          "Mname": "명탐정 코난: 베이커가의 망령"
+        },
+        {
+          "MId": "27205",
+          "Mname": "인셉션"
+        }
+      ]
     }
   ]
 }

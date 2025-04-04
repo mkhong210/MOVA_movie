@@ -1,0 +1,88 @@
+/* sub page (detail page) css */
+
+/* contents */
+.contents {
+  margin-top: 100px;
+}
+.content_area {
+  padding-top: 40px;
+}
+/* movie_cont_top */
+.content_area .movie_cont_top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+.movie_cont_top .img_wrap {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.movie_cont_top .img_wrap img {
+  width: 80%;
+}
+
+.movie_cont_top .desc_wrap {
+  width: 55%;
+}
+.movie_cont_top .desc_wrap .desc_title {
+  font-size: 4.2rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.movie_cont_top .desc_wrap .tag_area {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.movie_cont_top .desc_wrap .tag_area .tag {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 6px 16px;
+  border: solid 3px #fff;
+  border-radius: 20px;
+}
+.movie_cont_top .desc_wrap .desc_text {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+.movie_cont_top .desc_wrap .release {
+  font-size: 2.4rem;
+}
+
+/* movie_cont_btm */
+.movie_cont_btm {
+  margin-bottom: 50px;
+}
+
+.movie_cont_btm .cast_area {
+}
+
+.movie_cont_btm .cast_title {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.movie_cont_btm .cast_desc {
+  display: flex;
+  gap: 30px;
+}
+
+.movie_cont_btm .cast_desc .cast_img {
+  width: 100%;
+}
+.movie_cont_btm .cast_desc .cast_name {
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px 0;
+}
+.movie_cont_btm .cast_desc .cast_char {
+  font-size: 1.6rem;
+  text-align: center;
+}

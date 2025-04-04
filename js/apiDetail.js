@@ -1,9 +1,9 @@
 const API_KEY = "0b5ef5b0a2c9fcd67865f11fbd0a0e16";
 
-export function getRatedMovies() {
+export function getDetailMovie(dataNum) {
   return (
     fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=ko-KR`
+      `https://api.themoviedb.org/3/movie/${dataNum}?api_key=${API_KEY}&language=ko-KR`
     )
       // .then((res) => res.json())
       // .then((res) => console.log(res))

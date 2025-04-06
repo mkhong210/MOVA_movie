@@ -1,4 +1,4 @@
-import { getDetailMovie } from "../apiDetail.js";
+import { getDetailMovie } from "../routes/apiDetail.js";
 
 getDetailMovie(27205)
   // 8966 / 26662 / 27205

@@ -1,4 +1,4 @@
-import config from "/MOVA_movie/config.js";
+import config from "../config.js";
 const { API_KEY } = config;
 
 // import express from "express";

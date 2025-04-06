@@ -1,5 +1,4 @@
-// const API_KEY = "0b5ef5b0a2c9fcd67865f11fbd0a0e16";
-import config from "../config.js";
+import config from "/MOVA_movie/config.js";
 const { API_KEY } = config;
 
 export function getRatedMovies() {

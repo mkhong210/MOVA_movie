@@ -1,0 +1,144 @@
+/* contents */
+/* visual_area */
+.visual_area {
+  /* position: relative; */
+}
+.visual_area .visual_img {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* background-image: url('./img/visual_1.jpg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+.visual_img .image {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.visual_img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: black;
+  opacity: 60%;
+  /* opacity: 30%; */
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.visual_area .title_area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.visual_area .title {
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+/* tag_area */
+.cont_title {
+  font-size: 4.8rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 100px 0 70px;
+}
+.tag_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tag .tag_img {
+  width: 50%;
+}
+.tag .img_wrapwrap {
+  width: 300px;
+  margin: 0 auto;
+}
+.tag .img_wrap {
+  position: relative;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.tag .img_wrap .tag_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tag .tag_desc {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+/* movie_area */
+.movie_area .movie_cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.movie_area .movie_cont:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.movie_area .img_wrap {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.movie_area .img_wrap img {
+  width: 100%;
+}
+
+.movie_area .desc_wrap {
+  width: 55%;
+}
+.movie_area .desc_wrap .desc_title {
+  font-size: 3.6rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.movie_area .desc_wrap .desc_text {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+.movie_area .desc_wrap .sub_button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.movie_area .desc_wrap .sub_button a {
+  /* width: 100%; */
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: #8b559b;
+  padding: 6px 18px;
+  border-radius: 20px;
+}

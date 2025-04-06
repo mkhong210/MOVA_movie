@@ -3,7 +3,7 @@ node_modules/
 
 # 환경변수 파일 제외
 .env
-config.js
+# config.js
 
 # 기타 macOS, VSCode 등 관련 캐시들
 .DS_Store

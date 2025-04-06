@@ -1,6 +1,12 @@
 import config from "/MOVA_movie/config.js";
 const { API_KEY } = config;
 
+// import express from "express";
+// import fetch from "node-fetch";
+
+// const router = express.Router();
+// const API_KEY = process.env.API_KEY;
+
 export function getRatedMovies() {
   return (
     fetch(

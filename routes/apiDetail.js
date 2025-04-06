@@ -1,5 +1,6 @@
-// import config from "../config.js";
-// const { API_KEY } = config;
+// import config from "/MOVA_movie/config.js";
+import config from "/MOVA_movie/config.js";
+const { API_KEY } = config;
 
 export function getDetailMovie(dataNum) {
   return (

@@ -1,4 +1,4 @@
-import { getRatedMovies } from "./api.js";
+import { getRatedMovies } from "../routes/api";
 
 getRatedMovies()
   .then((data) => {

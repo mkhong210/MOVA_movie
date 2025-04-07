@@ -1,6 +1,5 @@
 // mypick.html
-import config from "../config.js";
-const { API_KEY } = config;
+import { getDetailMovie } from "../routes/apiDetail.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
@@ -20,13 +19,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
       console.log(userData);
       userData.movies.forEach((movie) => {
-        fetch(
-          `https://api.themoviedb.org/3/movie/${movie.MId}?api_key=${API_KEY}&language=ko`
-        )
-          .then((res) => res.json())
-          .then((detail) => {
-            console.log(detail);
-          });
+        getDetailMovie(movie.MId)
+          .then((data) => {
+            const movieData = data;
+
+            try {
+              if (!data) throw new Error("영화 데이터 없음!");
+
+              console.log("영화 제목:", movieData.title);
+              // data.forEach((movie) => {
+              // });
+            } catch (error) {
+              console.error("API 오류:", error.message);
+            }
+          })
+          .catch((err) => console.error("네트워크 오류:", err));
       });
     });
 });

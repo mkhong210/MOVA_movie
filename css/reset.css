@@ -1,87 +1,7 @@
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -95,17 +15,7 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -135,10 +45,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: #fff;
 }
 
-ol,
-ul,
-li,
-a {
+ol, ul, li, a {
   list-style: none;
   text-decoration: none;
   color: white;
@@ -174,13 +81,7 @@ body {
   /* background-color: black; */
   /* background-color: #680768; */
   /* background: linear-gradient(to right, #680768 0%, black 50%, #680768 100%); */
-  background: linear-gradient(
-    to right,
-    #5f4b8b 0%,
-    black 20%,
-    black 80%,
-    #5f4b8b 100%
-  );
+  /* background: linear-gradient(to right, #5f4b8b 0%, black 20%, black 80%, #5f4b8b 100%); */
   /* 5f4b8b / 9C8AA5 */
 }
 

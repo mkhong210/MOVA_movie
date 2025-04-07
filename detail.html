@@ -3,24 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <base href="/MOVA_movie/" /> -->
     <title>MOVA</title>
 
-    <!-- js -->
-    <script type="module" src="../js/movieDetail.js"></script>
-
     <!-- css -->
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/detail.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person,search"
+    />
   </head>
   <body>
     <header class="header">
-      <div class="header_area">
-        <a href="../mova.html" class="logo">MOVA</a>
+      <div class="inner">
+        <div class="header_area">
+          <div class="logo">
+            <a href="mova.html" class="logo">
+              <img src="asset/img/common/MOVA_white.png" alt="logo" />
+            </a>
+          </div>
+          <div class="header_right">
+            <a href="search.html" class="material-symbols-outlined">search</a>
+            <a href="mypick.html" class="material-symbols-outlined">person</a>
+          </div>
+        </div>
       </div>
     </header>
     <section class="contents">
-      <div class="content_area">
+      <div id="loading">로딩 중입니다...</div>
+      <div id="movieDetail" class="content_area" style="display: none"></div>
+      <!-- <div id="movieDetail" class="content_area">
         <div class="inner">
           <div class="movie_cont_top">
             <div class="img_wrap">
@@ -30,15 +45,12 @@
               />
             </div>
             <div class="desc_wrap">
-              <!-- original_title -->
               <p class="desc_title">트와일라잇</p>
               <div class="tag_area">
-                <!-- genres -->
                 <p class="tag">Fantasy</p>
                 <p class="tag">Drama</p>
                 <p class="tag">Romance</p>
               </div>
-              <!-- overview -->
               <p class="desc_text">
                 17세의 평범한 고등학생 소녀 ‘벨라’는 집안 사정으로 워싱턴 주
                 포크스에 있는 아빠의 집으로 이사를 온다. 전학 첫날, ‘벨라’는
@@ -55,7 +67,6 @@
             <div class="cast_area">
               <p class="cast_title">CAST</p>
               <div class="cast_desc">
-                <!-- casts / cast - name, profile_path, character-->
                 <div class="casts">
                   <img
                     src="../img/movie/twilight/twilight_cast1.jpg"
@@ -105,7 +116,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <footer class="footer">
       <div class="inner">
@@ -118,5 +129,8 @@
         </nav>
       </div>
     </footer>
+
+    <!-- js -->
+    <script type="module" src="js/movieDetail.js"></script>
   </body>
 </html>

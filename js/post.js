@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const userSection = document.getElementById("feed");
 
       if (!feed) return console.error("feed 요소 X");
-      console.log(userList.genres);
+
       userSection.innerHTML = userList
         .map(
           (userItem) => `
@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
 						${userItem.genres
               .map(
                 (genre) => `
-							<span class="tag">${genre.name_en}</span>
-						`
+									<span class="tag">${genre.name_en}</span>
+								`
               )
               .join("")}
 					</div>

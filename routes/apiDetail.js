@@ -6,7 +6,7 @@ export function getDetailMovie(dataNum) {
   // 8966 / 26662 / 27205
   return (
     fetch(
-      `https://api.themoviedb.org/3/movie/${dataNum}?api_key=${API_KEY}&language=ko-KR`
+      `https://api.themoviedb.org/3/movie/${dataNum}?api_key=${API_KEY}&language=ko-KR&append_to_response=images,casts`
     )
       // .then((res) => res.json())
       // .then((res) => console.log(res))

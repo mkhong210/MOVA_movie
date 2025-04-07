@@ -86,6 +86,64 @@
           "Mposter": "/uzBuUwFXgMO8afkWXnLeudmrSfe.jpg"
         }
       ]
+    },
+    {
+      "IdNum": 103,
+      "userName": "한주먹거리",
+      "userId": "one_Week",
+      "userPw": "",
+      "pick_title": "잔잔한데 흑막이 있거나, \n처음부터 슬픈데 색감은 아름답거나! \n연출과 색감이 매우 중요하고, 스토리는 튀지 않았으면 좋겠다",
+      "genres": [
+        { "id": 9648, "name_ko": "미스터리", "name_en": "Mystery" },
+        { "id": 80, "name_ko": "범죄", "name_en": "Crime" },
+        { "id": 12, "name_ko": "모험", "name_en": "Adventure" }
+      ],
+      "movies": [
+        {
+          "MId": "696506",
+          "Mname": "미키 17",
+          "Mposter": "/7KghOYtsxFquUuw4THbARsSEo6g.jpg"
+        },
+        {
+          "MId": "872585",
+          "Mname": "오펜하이머",
+          "Mposter": "/jpD6z9fgNe7OqsHoDeAWQWoULde.jpg"
+        },
+        {
+          "MId": "1315076",
+          "Mname": "고독한 미식가 더 무비",
+          "Mposter": "/uzBuUwFXgMO8afkWXnLeudmrSfe.jpg"
+        }
+      ]
+    },
+    {
+      "IdNum": 104,
+      "userName": "코기",
+      "userId": "corgi",
+      "userPw": "",
+      "pick_title": "애니메이션이나 로맨스 코미디를 주로 즐겨보는 영화매니아입니다 ^-^a",
+      "genres": [
+        { "id": 16, "name_ko": "애니메이션", "name_en": "Animation" },
+        { "id": 10751, "name_ko": "가족", "name_en": "Family" },
+        { "id": 10749, "name_ko": "로맨스", "name_en": "Romance" }
+      ],
+      "movies": [
+        {
+          "MId": "696506",
+          "Mname": "미키 17",
+          "Mposter": "/7KghOYtsxFquUuw4THbARsSEo6g.jpg"
+        },
+        {
+          "MId": "872585",
+          "Mname": "오펜하이머",
+          "Mposter": "/jpD6z9fgNe7OqsHoDeAWQWoULde.jpg"
+        },
+        {
+          "MId": "1315076",
+          "Mname": "고독한 미식가 더 무비",
+          "Mposter": "/uzBuUwFXgMO8afkWXnLeudmrSfe.jpg"
+        }
+      ]
     }
   ]
 }

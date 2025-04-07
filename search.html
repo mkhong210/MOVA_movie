@@ -9,7 +9,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/search.css" />
 
     <link
       rel="stylesheet"
@@ -33,11 +33,43 @@
       </div>
     </header>
     <section class="contents">
-      <div class="inner"></div>
+      <div class="inner">
+        <form class="search_area">
+          <input
+            type="text"
+            name="search_movie"
+            id="search_movie"
+            value=""
+            placeholder="영화 제목 검색"
+          />
+          <button type="submit" class="search_btn">검색</button>
+        </form>
+        <div class="popular_area">
+          <h2>인기 영화</h2>
+          <ul id="popular_conts">
+            <!-- <li class="popular_li">
+              <a href="detail.html" class="popular">
+                <div class="left">
+                  <img
+                    src="https://image.tmdb.org/t/p/w200/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg"
+                    alt="영화 이미지"
+                  />
+                  <p id="popular_movie">영화 제목</p>
+                </div>
+                <div class="right">
+                  <p>></p>
+                </div>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- js -->
-    <script type="module" src="js/movieSearch.js"></script>
+    <!-- <script type="module" src="js/movieSearch.js"></script> -->
+    <script type="module" src="js/moviePopular.js"></script>
     <script type="module" src="js/common.js"></script>
+    <script type="module" src="js/search.js"></script>
   </body>
 </html>

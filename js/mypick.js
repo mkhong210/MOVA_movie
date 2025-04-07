@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(idNum);
 
   // fetch("../data/user.json")
-  fetch("MOVA_movie/data/user.json")
+  fetch("data/user.json")
     .then((res) => res.json())
     .then((data) => {
       const userData = data.users.find((u) => u.IdNum === idNum);

@@ -1,6 +1,7 @@
 // mova.html
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("../data/user.json") // 또는 './data/user.json', 경로 맞게 조절
+  // fetch("../data/user.json")
+  fetch("MOVA_moive/data/user.json")
     .then((res) => {
       if (!res.ok) throw new Error("유저 데이터 불러오기 실패!");
       return res.json();

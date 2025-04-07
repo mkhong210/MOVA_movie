@@ -3,20 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <base href="/MOVA_movie/" /> -->
     <title>MOVA</title>
 
-    <!-- js -->
-    <script type="module" src="js/movie.js"></script>
-
     <!-- css -->
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="/css/mypick.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/mypick.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person,search"
+    />
   </head>
   <body>
     <header class="header">
-      <div class="header_area">
-        <a href="index.html" class="logo">MOVA</a>
+      <div class="inner">
+        <div class="header_area">
+          <div class="logo">
+            <a href="mova.html" class="logo">
+              <img src="asset/img/common/MOVA_white.png" alt="logo" />
+            </a>
+          </div>
+          <div class="header_right">
+            <a href="search.html" class="material-symbols-outlined">search</a>
+            <a href="mypick.html" class="material-symbols-outlined">person</a>
+          </div>
+        </div>
       </div>
     </header>
     <section class="contents">
@@ -100,7 +113,7 @@
                 예기치 못한 운명에 빠져든다.
               </p>
               <div class="sub_button">
-                <a href="./sub/twilight.html">Detail Page</a>
+                <a href="pages/detail.html">Detail Page</a>
               </div>
             </div>
           </div>
@@ -122,7 +135,7 @@
                 손상시키겠다고 협박하는데…
               </p>
               <div class="sub_button">
-                <a href="./sub/conan.html">Detail Page</a>
+                <a href="pages/detail.html">Detail Page</a>
               </div>
             </div>
           </div>
@@ -147,7 +160,7 @@
                 번도 성공한 적 없는 ‘인셉션’ 작전이 시작된다!
               </p>
               <div class="sub_button">
-                <a href="./sub/inception.html">Detail Page</a>
+                <a href="pages/detail.html">Detail Page</a>
               </div>
             </div>
           </div>
@@ -165,5 +178,9 @@
         </nav>
       </div>
     </footer>
+
+    <!-- js -->
+    <script type="module" src="js/mypick.js"></script>
+    <script type="module" src="js/common.js"></script>
   </body>
 </html>

@@ -2,26 +2,88 @@
   "users": [
     {
       "IdNum": 100,
-      "userName": "HONG",
+      "userName": "홍쓰",
       "userId": "hong1234",
       "userPw": "",
+      "pick_title": "HONG의 취향을 소개합니다!",
       "genres": [
-        { "id": 14, "name": "판타지" },
-        { "id": 28, "name": "액션" },
-        { "id": 9648, "name": "미스터리" }
+        { "id": 14, "name_ko": "판타지", "name_en": "Fantasy" },
+        { "id": 28, "name_ko": "액션", "name_en": "Action" },
+        { "id": 9648, "name_ko": "미스터리", "name_en": "Mystery" }
       ],
       "movies": [
         {
           "MId": "8966",
-          "Mname": "트와일라잇"
+          "Mname": "트와일라잇",
+          "Mposter": "/ryvt6cLTjHHH7Nnce3Xi5S3I533.jpg"
         },
         {
           "MId": "26662",
-          "Mname": "명탐정 코난: 베이커가의 망령"
+          "Mname": "명탐정 코난: 베이커가의 망령",
+          "Mposter": "/vpSDbgqaGblSvtVH5wSZAryTSfq.jpg"
         },
         {
           "MId": "27205",
-          "Mname": "인셉션"
+          "Mname": "인셉션",
+          "Mposter": "/zTgjeblxSLSvomt6F6UYtpiD4n7.jpg"
+        }
+      ]
+    },
+    {
+      "IdNum": 101,
+      "userName": "리차나",
+      "userId": "iee0807",
+      "userPw": "",
+      "pick_title": "전개가 빠르고 흥미진진한 장르를 좋아합니다.",
+      "genres": [
+        { "id": 14, "name_ko": "판타지", "name_en": "Fantasy" },
+        { "id": 27, "name_ko": "공포", "name_en": "Horror" },
+        { "id": 9648, "name_ko": "미스터리", "name_en": "Mystery" }
+      ],
+      "movies": [
+        {
+          "MId": "135397",
+          "Mname": "쥬라기 월드",
+          "Mposter": "/zJ5pZvsd5I8HYnRRAvLE2tSxtOW.jpg"
+        },
+        {
+          "MId": "933260",
+          "Mname": "서브스턴스",
+          "Mposter": "/oUkeyrXvGUEylOQtlYMv9esNRiu.jpg"
+        },
+        {
+          "MId": "838209",
+          "Mname": "파묘",
+          "Mposter": "/tw0i3kkmOTjDjGFZTLHKhoeXVvA.jpg"
+        }
+      ]
+    },
+    {
+      "IdNum": 102,
+      "userName": "피융",
+      "userId": "PPyoong",
+      "userPw": "",
+      "pick_title": "웬만한 영화는 다 좋아하는 편이나 스토리에 힘이 풀리는 느낌의 영화는 별루",
+      "genres": [
+        { "id": 878, "name_ko": "SF", "name_en": "Science Fiction" },
+        { "id": 9648, "name_ko": "미스터리", "name_en": "Mystery" },
+        { "id": 99, "name_ko": "다큐멘터리", "name_en": "Documentary" }
+      ],
+      "movies": [
+        {
+          "MId": "696506",
+          "Mname": "미키 17",
+          "Mposter": "/7KghOYtsxFquUuw4THbARsSEo6g.jpg"
+        },
+        {
+          "MId": "872585",
+          "Mname": "오펜하이머",
+          "Mposter": "/jpD6z9fgNe7OqsHoDeAWQWoULde.jpg"
+        },
+        {
+          "MId": "1315076",
+          "Mname": "고독한 미식가 더 무비",
+          "Mposter": "/uzBuUwFXgMO8afkWXnLeudmrSfe.jpg"
         }
       ]
     }

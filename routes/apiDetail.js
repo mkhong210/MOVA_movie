@@ -3,6 +3,7 @@ import config from "../config.js";
 const { API_KEY } = config;
 
 export function getDetailMovie(dataNum) {
+  // 8966 / 26662 / 27205
   return (
     fetch(
       `https://api.themoviedb.org/3/movie/${dataNum}?api_key=${API_KEY}&language=ko-KR`

@@ -170,7 +170,18 @@ html {
 
 body {
   font-size: 100%;
-  background-color: black;
+  background-color: #111;
+  /* background-color: black; */
+  /* background-color: #680768; */
+  /* background: linear-gradient(to right, #680768 0%, black 50%, #680768 100%); */
+  background: linear-gradient(
+    to right,
+    #5f4b8b 0%,
+    black 20%,
+    black 80%,
+    #5f4b8b 100%
+  );
+  /* 5f4b8b / 9C8AA5 */
 }
 
 input,

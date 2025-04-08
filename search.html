@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 배포 -->
     <base href="/MOVA_movie/" />
     <title>MOVA</title>
 
@@ -34,20 +35,23 @@
     </header>
     <section class="contents">
       <div class="inner">
-        <form class="search_area">
+        <form class="search_form">
           <input
             type="text"
-            name="search_movie"
+            name="query"
             id="search_movie"
             value=""
-            placeholder="영화 제목 검색"
+            autocomplete="off"
+            placeholder="영화 제목을 검색해 보세요 '~'"
           />
-          <button type="submit" class="search_btn">검색</button>
+          <button type="submit" class="search_btn">
+            <p class="material-symbols-outlined">search</p>
+          </button>
         </form>
         <div class="popular_area">
           <h2>인기 영화</h2>
-          <ul id="popular_conts">
-            <!-- <li class="popular_li">
+          <div id="popular_conts">
+            <!-- <div class="popular_li">
               <a href="detail.html" class="popular">
                 <div class="left">
                   <img
@@ -60,16 +64,28 @@
                   <p>></p>
                 </div>
               </a>
-            </li> -->
-          </ul>
+            </div> -->
+          </div>
+        </div>
+        <div class="search_area">
+          <h2>검색 결과</h2>
+          <div id="search_conts">
+            <!-- <div class="search_li">
+              <a href="detail.html" class="search">
+                <img src="asset/img/placehold/placehold_poster.png" alt="" />
+                <p class="search_name">영화제목</p>
+              </a>
+            </div> -->
+          </div>
         </div>
       </div>
     </section>
 
     <!-- js -->
+    <script type="module" src="js/controlSearch.js"></script>
     <!-- <script type="module" src="js/movieSearch.js"></script> -->
-    <script type="module" src="js/moviePopular.js"></script>
+    <!-- <script type="module" src="js/moviePopular.js"></script> -->
     <script type="module" src="js/common.js"></script>
-    <script type="module" src="js/search.js"></script>
+    <!-- <script type="module" src="js/search.js"></script> -->
   </body>
 </html>

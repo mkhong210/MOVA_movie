@@ -49,6 +49,7 @@
   font-size: 5rem;
   font-weight: 500;
   padding-bottom: 20px;
+  white-space: pre-line;
 }
 
 /* tag_area */
@@ -96,7 +97,7 @@
 }
 
 /* movie_area */
-.movie_area .movie_cont {
+.movie_area .movie {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -104,7 +105,7 @@
   gap: 50px;
   margin-bottom: 50px;
 }
-.movie_area .movie_cont:nth-child(odd) {
+.movie_area .movie:nth-child(odd) {
   flex-direction: row-reverse;
 }
 .movie_area .img_wrap {

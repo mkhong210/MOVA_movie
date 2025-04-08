@@ -1,8 +1,9 @@
 // search.html
 import { getRatedMovies } from "../routes/api.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-  const popList = document.getElementById("popular_conts");
+// document.addEventListener("DOMContentLoaded", () => {
+export function renderPopular() {
+  const popList = document.querySelector("#popular_conts");
 
   getRatedMovies()
     .then((data) => {
@@ -11,32 +12,37 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         if (!data || !data.results) throw new Error("영화 데이터 없음!");
 
-        data.results.forEach((movie, idx) => {
-          if (idx >= 10) return;
+        const filtered = data.results.filter((movie) =>
+          ["en", "fr", "ko"].includes(movie.original_language)
+        );
 
-          // console.log(idx);
-          // console.log("영화 제목:", movie.title);
+        // 상위 10개만 자르기
+        const limited = filtered.slice(0, 10);
+
+        limited.forEach((movie) => {
+          // console.log(movie.title);
 
           popList.innerHTML += `
-						<li class="popular_li">
-              <a href="detail.html?movieId=${movie.id}" class="popular">
-								<div class="left">
-									<img
-										src="https://image.tmdb.org/t/p/w200${movie.backdrop_path}"
-										alt="영화 이미지"
-									/>
-									<p id="popular_movie">${movie.title}</p>
-								</div>
-								<div class="right">
-									<p>></p>
-								</div>
-							</a>
-            </li>
-          `;
+							<div class="popular_li">
+								<a href="detail.html?movieId=${movie.id}" class="popular">
+									<div class="left">
+										<img
+											src="https://image.tmdb.org/t/p/w200${movie.backdrop_path}"
+											alt="영화 이미지"
+										/>
+										<p id="popular_movie">${movie.title}</p>
+									</div>
+									<div class="right">
+										<p>></p>
+									</div>
+								</a>
+							</div>
+						`;
         });
       } catch (error) {
         console.error("API 오류:", error.message);
       }
     })
     .catch((err) => console.error("네트워크 오류:", err));
-});
+}
+// });

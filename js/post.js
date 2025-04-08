@@ -1,7 +1,7 @@
 // mova.html
 document.addEventListener("DOMContentLoaded", () => {
-  // fetch("../data/user.json")
-  fetch("data/user.json")
+  // fetch("../data/user.json") // live server
+  fetch("data/user.json") // 배포
     .then((res) => {
       if (!res.ok) throw new Error("유저 데이터 불러오기 실패!");
       return res.json();
@@ -40,8 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
               .map(
                 (movie) => `
 							<div class="movie">
-								<img src="https://image.tmdb.org/t/p/w500${movie.Mposter}" alt="${movie.Mname}" />
-								<p class="move_title">${movie.Mname}</p>
+								<a href="detail.html?movieId=${movie.MId}" class="movie_detail" >
+									<img src="https://image.tmdb.org/t/p/w500${movie.Mposter}" alt="${movie.Mname}" />
+									<p class="move_title">${movie.Mname}</p>
+								</a>
 							</div>
 						`
               )

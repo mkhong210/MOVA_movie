@@ -55,6 +55,11 @@ section.contents {
   width: 100px;
   text-align: center;
 }
+.movie_detail {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 .movie img {
   width: 100%;
   aspect-ratio: 2 / 3;

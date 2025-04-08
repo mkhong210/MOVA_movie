@@ -24,8 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
         loading.style.display = "none";
         detail.style.display = "block";
 
-        console.log(data.casts);
+        console.log(data);
         console.log(detail);
+
         detail.innerHTML += `
 					<div class="inner">
 						<div class="movie_cont_top">
@@ -42,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 									${data.genres.map((tag) => `<p class="tag">${tag.name}</p>`).join("")}
 								</div>
 								<p class="desc_text">
-									${data.overview}
+									${data.overview ? data.overview : "한국어 줄거리 정보가 없습니다."}
 								</p>
 								<p class="release">출시일 : ${data.release_date}</p>
 							</div>
@@ -57,7 +58,11 @@ document.addEventListener("DOMContentLoaded", () => {
                       (person) => `
 												<div class="casts">
 													<img
-														src="https://image.tmdb.org/t/p/w200${person.profile_path}"
+														src = ${
+                              person.profile_path
+                                ? `https://image.tmdb.org/t/p/w200${person.profile_path}`
+                                : "asset/img/placehold/placehold_person.png"
+                            }
 														alt="${person.name} 인물 이미지"
 														class="cast_img"
 													/>

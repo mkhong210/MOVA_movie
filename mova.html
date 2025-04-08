@@ -28,7 +28,9 @@
           </div>
           <div class="header_right">
             <a href="search.html" class="material-symbols-outlined">search</a>
-            <a href="mypick.html" class="material-symbols-outlined">person</a>
+            <a href="mypick.html?id=100" class="material-symbols-outlined"
+              >person</a
+            >
           </div>
         </div>
       </div>
@@ -74,21 +76,27 @@
         <div class="sidebar">
           <div class="sidebar_header">
             <h3>새로 개봉하는 영화</h3>
-            <a href="" class="plus">더보기 ></a>
+            <!-- <a href="" class="plus" id="new_plus">자세히 보기 ></a> -->
           </div>
-          <div class="new_conts">
-            <img
+          <div class="new_conts" id="new_movie">
+            <!-- <img
               src="https://image.tmdb.org/t/p/w500/5gR5oCQufzZ6tPcFoHb61ckiwiP.jpg"
               alt="Random Movie"
             />
-            <p class="new_title">Random Movie Title</p>
+            <p class="new_title">Random Movie Title</p> -->
           </div>
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="inner">
+        <p class="copyright">© 2025 MOVA. All rights reserved.</p>
+      </div>
+    </footer>
 
     <!-- js -->
     <script type="module" src="js/post.js"></script>
+    <script type="module" src="js/movieComing.js"></script>
     <script type="module" src="js/common.js"></script>
   </body>
 </html>

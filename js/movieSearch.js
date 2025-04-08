@@ -6,10 +6,7 @@ export function renderSearch(query) {
   const urlParams = new URLSearchParams(window.location.search);
   const search = urlParams.get("query")?.trim().toLowerCase();
 
-  console.log(query);
-
   const form = document.querySelector("#search_conts");
-  console.log(form);
 
   getSearchMovie(query)
     .then((data) => {
@@ -20,12 +17,19 @@ export function renderSearch(query) {
         return;
       }
 
-      console.log(data);
-      data.results.forEach((movie) => {
+      const searchResult = data;
+
+      searchResult.results.forEach((movie) => {
         form.innerHTML += `
 					<div class="search_li">
 						<a href="detail.html?movieId=${movie.id}" class="search">
-							<img src="https://image.tmdb.org/t/p/w400/${movie.poster_path}" alt="${movie.title}" />
+							<img 
+								src = ${
+                  movie.poster_path
+                    ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+                    : "asset/img/placehold/placehold_poster.png"
+                } 
+								alt="${movie.title}" />
 							<p class="search_name">${movie.title}</p>
 						</a>
 					</div>

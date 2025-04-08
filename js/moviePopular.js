@@ -5,23 +5,16 @@ import { getRatedMovies } from "../routes/api.js";
 export function renderPopular() {
   const popList = document.querySelector("#popular_conts");
 
-  getRatedMovies()
+  getRatedMovies("popular")
     .then((data) => {
-      // console.log("인기 영화 목록:", data.);
-      console.log(popList);
+      const popData = data;
       try {
-        if (!data || !data.results) throw new Error("영화 데이터 없음!");
-
-        const filtered = data.results.filter((movie) =>
-          ["en", "fr", "ko"].includes(movie.original_language)
-        );
+        if (!popData || !popData.length) throw new Error("영화 데이터 없음!");
 
         // 상위 10개만 자르기
-        const limited = filtered.slice(0, 10);
+        const limited = popData.slice(0, 10);
 
         limited.forEach((movie) => {
-          // console.log(movie.title);
-
           popList.innerHTML += `
 							<div class="popular_li">
 								<a href="detail.html?movieId=${movie.id}" class="popular">

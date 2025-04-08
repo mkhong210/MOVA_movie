@@ -62,13 +62,11 @@
 }
 
 /* contents */
-section.contents {
-  /* margin-top: 140px; */
-}
 
 /* footer */
 .footer {
   background: #222;
+  background: black;
   color: #fff;
   padding: 20px 0;
   text-align: center;

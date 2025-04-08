@@ -4,7 +4,7 @@
       "IdNum": 100,
       "userName": "홍쓰",
       "userId": "hong1234",
-      "userPw": "",
+      "userPw": "hong1234",
       "pick_title": "HONG의 취향을\n 소개합니다!",
       "genres": [
         { "id": 14, "name_ko": "판타지", "name_en": "Fantasy" },
@@ -33,7 +33,7 @@
       "IdNum": 101,
       "userName": "리차나",
       "userId": "iee0807",
-      "userPw": "",
+      "userPw": "iee0807",
       "pick_title": "전개가 빠르고 흥미진진한 \n장르를 좋아합니다.",
       "genres": [
         { "id": 14, "name_ko": "판타지", "name_en": "Fantasy" },
@@ -62,7 +62,7 @@
       "IdNum": 102,
       "userName": "피융",
       "userId": "PPyoong",
-      "userPw": "",
+      "userPw": "PPyoong",
       "pick_title": "웬만한 영화는 다 \n좋아하는 편이나 스토리에 \n힘이 풀리는 느낌의 영화는 별루",
       "genres": [
         { "id": 878, "name_ko": "SF", "name_en": "Science Fiction" },
@@ -91,7 +91,7 @@
       "IdNum": 103,
       "userName": "한주먹거리",
       "userId": "one_Week",
-      "userPw": "",
+      "userPw": "one_Week",
       "pick_title": "잔잔한데 흑막이 있거나, \n처음부터 슬픈데 색감은 아름답거나! \n연출과 색감이 매우 중요하고, \n스토리는 튀지 않았으면 좋겠다",
       "genres": [
         { "id": 9648, "name_ko": "미스터리", "name_en": "Mystery" },
@@ -120,7 +120,7 @@
       "IdNum": 104,
       "userName": "코기",
       "userId": "corgi",
-      "userPw": "",
+      "userPw": "corgi",
       "pick_title": "애니메이션이나 로맨스 코미디를 주로 즐겨보는 영화매니아입니다 ^-^a",
       "genres": [
         { "id": 16, "name_ko": "애니메이션", "name_en": "Animation" },

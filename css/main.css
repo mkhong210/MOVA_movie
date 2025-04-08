@@ -40,7 +40,7 @@ section.contents {
 .tag {
   display: inline-block;
   background: #333;
-  padding: 5px 10px;
+  padding: 5px 12px;
   border-radius: 5px;
   margin-right: 5px;
   font-size: 1.8rem;
@@ -81,7 +81,7 @@ section.contents {
   height: max-content;
   flex: 1;
   background: #1e1e1e;
-  padding: 30px 20px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
 }
@@ -106,5 +106,6 @@ section.contents {
   border-radius: 10px;
 }
 .new_conts .new_title {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  margin-top: 10px;
 }

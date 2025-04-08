@@ -48,7 +48,7 @@
 }
 .movie_cont_top .desc_wrap .desc_text {
   font-size: 2.4rem;
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: 40px;
   font-weight: 300;
 }
@@ -73,7 +73,13 @@
   display: flex;
   gap: 30px;
 }
-
+.cast_desc .casts {
+  flex: 1;
+}
+.cast_desc .casts p {
+  line-height: 1.4;
+  word-break: keep-all;
+}
 .movie_cont_btm .cast_desc .cast_img {
   width: 100%;
 }

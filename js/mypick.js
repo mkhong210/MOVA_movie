@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const idNum = parseInt(urlParams.get("id"));
 
-  console.log(idNum);
-
   // fetch("../data/user.json") // live server
   fetch("data/user.json") // 배포
     .then((res) => res.json())
@@ -17,8 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("사용자 정보를 찾을 수 없습니다.");
         return;
       }
-
-      console.log(userData);
 
       // visual_area title
       const Title = document.querySelector(".title_area");
@@ -64,7 +60,11 @@ document.addEventListener("DOMContentLoaded", () => {
 								<div class="movie cont1">
 									<div class="img_wrap">
 										<img
-											src="https://image.tmdb.org/t/p/w500${movieData.poster_path}"
+											src = ${
+                        movieData.poster_path
+                          ? `https://image.tmdb.org/t/p/w500${movieData.poster_path}`
+                          : "asset/img/placehold/placehold_poster.png"
+                      }
 											alt="${movieData.title}영화포스터"
 										/>
 									</div>

@@ -34,6 +34,9 @@ section.contents {
 .post_title .post_plus {
   font-size: 1.8rem;
 }
+.post_title .post_plus:hover a {
+  color: #8b559b;
+}
 .tags {
   margin-bottom: 16px;
 }
@@ -97,6 +100,9 @@ section.contents {
 }
 .sidebar_header .plus {
   font-size: 1.6rem;
+}
+.sidebar_header .plus:hover {
+  color: #8b559b;
 }
 .new_conts {
   text-align: center;
